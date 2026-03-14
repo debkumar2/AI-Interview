@@ -6,6 +6,8 @@ import Pricing from './components/Pricing'
 import Brand from './components/Brand'
 import Integration from './components/Integration'
 import LocomotiveScroll from 'locomotive-scroll';
+import Hire from './components/Hire'
+import Footer from './components/Footer'
 
 const App = () => {
 
@@ -18,6 +20,8 @@ const App = () => {
       <Pricing />
       <Brand />
       <Integration />
+      <Hire/>
+      <Footer/>
     </div>
   )
 }
