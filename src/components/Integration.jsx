@@ -18,7 +18,7 @@ const Integration = () => {
 }`
 
     return (
-        <div className='py-10 max-w-screen-xl mx-auto px-4'>
+        <div className='py-10 max-w-screen-xl mx-auto px-4' id='integrations'>
             <div className='text-center'>
                 <Heading text='Seamless' highlight='Integrations' subText='Connect with your favorite tools and automate workflow' />
             </div>

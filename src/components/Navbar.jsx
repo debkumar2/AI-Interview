@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ButtonCom from './ButtonCom'
+import { HashLink } from 'react-router-hash-link'
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -12,10 +13,22 @@ const Navbar = () => {
                     <h4 className="font-grotesk text-lg font-semibold">INTERVIEW</h4>
                 </div>
                 <ul className='hidden md:flex text-[#A0AEBF] text-sm items-center gap-10 font-medium'>
-                    <li><a href="" className="hover:text-white transition-colors duration-200">Features</a></li>
-                    <li><a href="" className="hover:text-white transition-colors duration-200">Pricing</a></li>
-                    <li><a href="" className="hover:text-white transition-colors duration-200">Integrations</a></li>
-                    <li><a href="" className="hover:text-white transition-colors duration-200">Demo</a></li>
+                    <li>
+                        {/* <a href="" className="hover:text-white transition-colors duration-200">Features</a> */}
+                        <HashLink smooth to='/#features' className="hover:text-white transition-colors duration-200">Features</HashLink>
+                    </li>
+                    <li>
+                        {/* <a href="" className="hover:text-white transition-colors duration-200">Pricing</a> */}
+                        <HashLink smooth to='/#pricing' className="hover:text-white transition-colors duration-200">Pricing</HashLink>
+                        </li>
+                    <li>
+                        {/* <a href="" className="hover:text-white transition-colors duration-200">Integrations</a> */}
+                         <HashLink smooth to='/#integrations' className="hover:text-white transition-colors duration-200">Pricing</HashLink>
+                        </li>
+                    <li>
+                        {/* <a href="" className="hover:text-white transition-colors duration-200">Demo</a> */}
+                        <HashLink smooth to='' className="hover:text-white transition-colors duration-200">Demo</HashLink>
+                        </li>
                 </ul>
                 <div className="hidden md:flex items-center gap-4">
                     <ButtonCom btnText="Login" primaryBtn={true} fullWidth={false} />

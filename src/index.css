@@ -13,7 +13,9 @@
 @utility font-grotesk {
   font-family: var(--font-grotesk);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--font-inter);
 }

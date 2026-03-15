@@ -59,7 +59,7 @@ const Pricing = () => {
   const activePlans = plans[billing]
 
   return (
-    <div className="py-16 max-w-screen-xl mx-auto px-4">
+    <div className="py-16 max-w-screen-xl mx-auto px-4" id='pricing'>
       <div className="text-center mb-10">
         <Heading text="Simple" highlight="Pricing" subText="Choose your plan. No hidden fees. Cancel anytime." />
       </div>
